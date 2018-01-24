@@ -1,0 +1,264 @@
+/*Style sheet created by Ian Eastwood 11/10/2017 */
+
+/* style for body specifies a background color*/
+body {
+	background-color: #000033;
+}
+
+/*stle to create fluid image */
+img{
+	max-width: 100%;
+
+}
+
+/*styles for mobile layout */
+
+
+/*style for container centers the page and sets the element width*/
+#container {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Style for header specifies top margins, backround color, rounder border,shadow, and center lines content alignment*/
+header {
+		margin-top: 0.2em;
+		background-color: #000000;
+		text-align: center;
+		font-size: 2.25em;
+		background-color: #d9d9d9;
+		color: #000000;
+		font-family:Georgia, "Brush Script", serif;
+}
+
+
+/* Style for nav specifies text properties*/ 
+nav {
+	font-family:Georgia, "Times New Roman", serif;
+	font-size: 1.25em;
+	font-weight: bold;
+	text-align: center;
+	
+}	
+
+/* styles padding and margins for unordered list */
+nav ul {
+	padding: 0;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+/* this is the style for nav list sepecifies the backround color rounded corners and removes bullet styles ,lisitng items wihin the navigation*/
+nav li { 
+background-color: #d9d9d9;
+list-style-type: none;
+margin: 0.3em;
+padding: 0.4em;
+}
+
+/*text color to white and removes the underlined words */
+nav li a {
+	color: #4d004d;
+	text-decoration: none;
+}
+
+article {
+		background-color: #ffe6ff;
+		float: right;
+		margin: 0.5%;
+		text-align: center;
+		width: 31%;
+	}
+
+/*style displays the mobile class*/
+.moblie {
+		display: inline;
+}
+
+/*style hiddes the desktop class */
+.desktop { 
+	display: none;
+}
+/*Style for main specifies a block diplay, tect proprties margins padding rounded corners, border properties*/
+main {
+	background-color: #FFFFFF;
+	border-radius: 5em 5em 5em 5em;
+	padding: 1.5em;
+	margin: 1em;
+}
+
+/*style for new specifies font size , text aliment , and top margin*/ 
+footer {
+	font-size: .70em;
+	margin-top: 2em;
+	text-align: center;
+}
+
+/*style hiddes the tablet class */
+.tablet {
+	display:none;
+}
+
+/* style rule specifies to not dispaly the equip class */
+
+.equip {
+	display: none;
+}
+
+/* media qury for tablet view port targets screen size with a minimun iwdth of pixles */
+
+@media only screen and (min-width: 660px){
+	
+	/*style specifies a gotizontal display for nvigation links */
+	nav li {
+		display: inline;
+		float: left;
+		margin-left: 1%;
+		margin-right: 1%;
+		padding-left: 0;
+		padding-right: 0;
+		width: 18%;
+		white-space: nowrap;
+		border-radius: 0;
+	}
+	
+/*style specfies clear and top margin propertie sfor the main element*/
+main { 
+clear: left;
+margin-top: 4em;
+}
+
+/* styles specifes to hide the moblie class */	
+.moblie {
+		display: none;
+}
+/* this style specifes to displat the desktop class*/
+.desktop {
+	display:inline;
+}
+
+/* style specfies a display, float and padding for the equip class */
+.equip { 
+display: inline;
+float: left;
+margin-left: 1%;
+margin-right: 1%;
+padding-left: 0;
+padding-right: 0;
+width: 30%;
+white-space: nowrap;
+border-radius: 0;
+}
+
+/* style specifes a display, list style position and botttom margin class */
+.items {
+	display: block;
+	list-style-position: inside;
+	margin-bottom: 5em;
+}
+.tablet { 
+	display: block;
+}
+
+.showcase {
+	border-radius: 0;
+		border-top: solid #000000;
+		border-bottom: solid #000000;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0;
+		width: 25%;
+}
+
+/*stle specifes font wiehgt and top maring for description list */
+dt { font-weight: bold;
+margin-top: 0.7em;
+}  
+}
+
+/* media query for destop view port that target screens that with an minumun of 769 pixles */
+@media only screen and (min-width: 830px) { 
+
+/*style specifes a width for container */
+#container {
+	width:80%;
+}
+
+/*style specifes margin and padding ofr the unordered listwithin hte nav*/
+nav ul {margin: 0;
+padding-left: 1%;
+padding-right: 1%;
+}
+
+/*style for the navigation list items species for hte border margin awidth and padding */
+nav li {
+		border-radius: 0;
+		border-top: solid #000000;
+		border-bottom: solid #000000;
+		margin-left: auto;
+		margin-right: auto;
+		padding: .25em;
+		width: 19%;
+}
+
+/*style for navigation links specifes dsoplay and padding */
+nav li a {
+	display: inline-block;
+	padding: 10px 20px;
+
+}
+	/*style shadows border,shadow and margin and padding for element*/
+main { 
+	display: block;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 1em;
+	margin-top: 0.5em;
+	padding: 1em;
+	background-color: #FFFFFF;
+	border-radius: 1em 1em 1em 1em;
+}
+/*style sepfifes 		left and right padding for paragraph within main elements*/
+
+main p {
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+}
+#banner {
+	text-align: center;
+	width: 100%;
+	
+}
+
+/* comment style for aratical element */
+	article {
+		background-color: #ffe6ff;
+		float: left;
+		margin: 5em;
+		text-align: center;
+		width: 33%;
+		border-radius: 5em 5em 5em 5em;
+		padding: 1.5em;
+	}
+	
+	/*style for element container with  ain artical element */
+	main article img {
+		border: solid 0.1em #1D1D1C;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	/*style for paragragh eleent contained within main artical element */
+	main article p {
+		color: #000000;
+		margin-top: 2%;
+		padding: 1%;
+		text-align: left;
+	}
+	
+	/*style for the unordered list wiin article elemet*/
+	main article ul {
+		text-align: left;
+	}
+
+}
